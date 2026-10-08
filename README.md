@@ -357,7 +357,11 @@ curl -X GET "http://localhost:8000/api/health" -H "accept: application/json"
 
 5. **Start the FastAPI application:**
    ```bash
-   uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+   # Method 1: Using the runner script
+   python run.py
+
+   # Method 2: Using python -m uvicorn
+   python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
    ```
 
 6. **Open API Documentation:**
