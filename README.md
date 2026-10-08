@@ -440,3 +440,6 @@ tests/test_parsers.py::test_kml_parser PASSED                            [100%]
   Integrate an embedded MapLibre / Leaflet visualizer in the Swagger docs or frontend to render feature boundaries and measurement tooltips directly in the browser.
 - **PostGIS / Cloud Native Spatial Backend**:
   Add optional direct PostGIS database synchronization for querying intersecting or neighboring features using spatial SQL (`ST_Area`, `ST_Length`).
+
+  <img width="1556" height="1087" alt="image" src="https://github.com/user-attachments/assets/d49c95a3-782e-4818-9a0e-6fd3bd9892f1" />
+
