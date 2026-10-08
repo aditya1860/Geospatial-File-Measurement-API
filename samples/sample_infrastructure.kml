@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Metropolitan Infrastructure &amp; Survey</name>
+    <description>Sample dataset with agricultural plots, highways, and sensor stations.</description>
+    
+    <!-- 1. Polygon: Agricultural Plot -->
+    <Placemark>
+      <name>High-Tech Agricultural Field Alpha</name>
+      <description>Precision agriculture test field</description>
+      <ExtendedData>
+        <Data name="CropType"><value>Organic Wheat</value></Data>
+        <Data name="IrrigationSystem"><value>Drip Automated</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -122.084,37.422,0
+              -122.080,37.422,0
+              -122.080,37.426,0
+              -122.084,37.426,0
+              -122.084,37.422,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- 2. LineString: Highway Transit Corridor -->
+    <Placemark>
+      <name>Corridor Express Highway Link</name>
+      <description>Major highway connecting industrial zone</description>
+      <ExtendedData>
+        <Data name="LaneCount"><value>4</value></Data>
+        <Data name="SurfaceType"><value>Asphalt Concrete</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          -122.084,37.420,0
+          -122.075,37.424,0
+          -122.065,37.428,0
+          -122.050,37.435,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- 3. Point: Weather & Environmental Sensor -->
+    <Placemark>
+      <name>Weather Sensor Station 01</name>
+      <description>IoT telemetry node</description>
+      <ExtendedData>
+        <Data name="SensorType"><value>Anemometer + Barometer</value></Data>
+        <Data name="BatteryLevel"><value>98%</value></Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-122.082,37.423,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- 4. Polygon: Irregular lake boundary with inner hole -->
+    <Placemark>
+      <name>Freshwater Reservoir Lake</name>
+      <description>Municipal water catchment area</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -122.090,37.430,0
+              -122.070,37.430,0
+              -122.070,37.440,0
+              -122.090,37.440,0
+              -122.090,37.430,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+        <innerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -122.082,37.433,0
+              -122.078,37.433,0
+              -122.078,37.437,0
+              -122.082,37.437,0
+              -122.082,37.433,0
+            </coordinates>
+          </LinearRing>
+        </innerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>
